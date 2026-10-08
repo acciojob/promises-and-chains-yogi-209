@@ -1,5 +1,5 @@
 //your JS code here. If required.
-document.querySelector('form').addEvenListener('submit',function(e){
+document.querySelector('form').addEventListener('submit',function(e){
 	e.preventDefault();
 
 	const ageInput=document.getElementById("age").value;
@@ -17,7 +17,7 @@ document.querySelector('form').addEvenListener('submit',function(e){
 				resolve(`Welcome, ${name}. You can vote.`);
 			}
 			else{
-				reject(`oh sorry ${name}. You aren't old enough.`);
+				reject(`Oh sorry ${name}. You aren't old enough.`);
 			}
 		},4000);
 	});
